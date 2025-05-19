@@ -64,7 +64,7 @@ async function getWeather() {
 
   } catch (error) {
     console.error('Fetch error:', error);
-    resultDiv.innerHTML = "❌ Error fetching data. Please try again.";
+    resultDiv.innerHTML = " Error fetching data. Please try again.";
   }
 }
 
@@ -73,7 +73,7 @@ async function getWeatherByLocation() {
   resultDiv.innerHTML = "📍 Getting your location...";
 
   if (!navigator.geolocation) {
-    resultDiv.innerHTML = "❌ Geolocation not supported by your browser.";
+    resultDiv.innerHTML = " Geolocation not supported by your browser.";
     return;
   }
 
@@ -103,10 +103,10 @@ async function getWeatherByLocation() {
 
     } catch (error) {
       console.error('Location fetch error:', error);
-      resultDiv.innerHTML = "❌ Failed to fetch weather by location.";
+      resultDiv.innerHTML = " Failed to fetch weather by location.";
     }
   }, () => {
-    resultDiv.innerHTML = "❌ Unable to retrieve your location.";
+    resultDiv.innerHTML = " Unable to retrieve your location.";
   });
 }
 
