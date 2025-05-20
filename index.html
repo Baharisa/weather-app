@@ -10,13 +10,16 @@
   <div class="container">
     <h1>🌤️ Weather App</h1>
 
-    <div class="input-group">
+    <div class="button-group">
+      <button id="themeToggle">Toggle Dark Mode</button>
       <input type="text" id="cityInput" placeholder="Enter a city name" />
       <button onclick="getWeather()">Get Weather</button>
-      <button onclick="getWeatherByLocation()">📍 Use My Location</button>
+      <button onclick="getWeatherByLocation()">Use My Location</button>
     </div>
 
     <div id="weatherResult"></div>
+    <h3>5-Day Forecast</h3>
+    <div id="forecastResult" class="forecast-grid"></div>
 
     <h3>Search History</h3>
     <div id="searchHistory"></div>
